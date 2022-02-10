@@ -1,0 +1,165 @@
+@import "../helpers/mixin-properties";
+@import "../helpers/extend";
+
+/* Tractor-Image_Section */
+.hero-banner{
+    position: relative;
+    &__image{
+        width:100%;
+    }
+    &__content{
+        @extend %project-container;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        position: absolute;
+        top:45%;
+        left:0;
+        right:0;
+    }
+    &__heading{
+        @include banner_section($white-color,$green-background-color,$lato-family,57px,900,5px); 
+        @include padding(0,20px,0,20px);
+    }
+    &__sub-heading{
+        @include banner_section($white-color,$dark-green,$lato-family,35px,900,30px); 
+        @include padding(12px,21px,12px,21px); 
+    }
+    &__button{
+        @extend %knowmore-buttons;
+        color:$banner-button-color;
+        background-color: $white-color;
+    }
+    &__bottom-icon-background{
+        @include flex-items(flex,-direction,center);
+        background-color:$green-background-color;
+        position:absolute;
+        padding:25px;
+        left:50%;
+        bottom:-6%;
+    }
+    &__bottom-icon{
+        border:2px solid $white-color;
+        top:40%;
+        padding:10px 6px;
+    }
+
+
+
+}
+
+
+/* Manage and Development Section */
+
+.manage-development-section{
+    @extend %project-container;
+    margin-top:140px;
+    display:flex;
+    padding-left:59px;
+    &__elements{
+        width:876px;
+        height:218px;
+    }
+    &__image{
+        height:90px;
+        width:742px;
+    }
+    &__heading{
+        @extend %headings;  
+        padding-left:114px;
+        margin-bottom:15px;  
+    }
+    &__location-heading{
+        @extend %headings;
+        text-align:end; 
+        margin-top:15px;
+    }
+    &__logo{
+        position:absolute;
+        right:12%;
+    }
+}
+   
+
+.services{
+    background-image: linear-gradient($white-color,$light-white-color);
+    &__elements{
+        @extend %project-container;
+        @include padding(122px,0,123px,0);
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        width:872px;
+    }
+    &__list{
+        @extend %service-section-names;
+        width:96px;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__image{
+        @extend %service-section-images;
+    }
+    &__name{
+        text-align: center;
+    }
+}
+
+
+
+
+/* About-Us-Section */
+.aboutus-section{
+    @include images( url("../Images/paper.png"),521px ,100% ,no-repeat );
+    @include flex-items(flex, -direction,space-between);
+    color:$white-color;
+    background-color:$background-color-brown;
+    .aboutus-container{
+        @extend %project-container;
+        @include flex-items(flex,row,-content); 
+        position: relative;
+        .plant-image{
+            @include images(url("../Images/plant.png"),353px ,556px ,no-repeat );
+            @include flex-items(flex, -direction,center);
+            align-items:center;
+            position: absolute;
+            top:17%
+        }
+        .text-section{
+            @include flex-items(flex,column,-content);
+            height:308px;
+            width:395px;
+            position: absolute;
+            top:15%;
+            left:58%;
+            .vidc-heading{
+                font-size: 36px;
+                font-family: lato;
+            }
+            .vidc-description{
+                font-size:16px;
+                font-family:$lato-family;
+                font-weight: regular;
+                padding:2px;
+                margin-bottom: 10px;
+            }
+            .aboutus-button{
+                @extend %knowmore-buttons;
+                color:$white-color;
+                background-color:$aboutus-button;
+            }   
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+

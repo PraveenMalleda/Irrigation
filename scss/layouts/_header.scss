@@ -1,0 +1,114 @@
+@import "../helpers/mixin-properties";
+@import "../helpers/extend";
+
+/* HEADER*/
+.header{
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.11);
+    z-index: 1;
+    position:relative;
+    &__container{
+        background-color: $white-color;
+        @extend %project-container;
+    }
+    &__nav-container{
+    @include flex-items(flex, row, space-between);
+    @include padding(15px,0px,22px,0px);
+    }
+    &__vidarbha-logo-elements{
+        display: flex;
+        width:277px;
+        align-items: center;
+        font-size: 15px;
+        color:$browncolor;
+        text-decoration: none;
+        font-weight:700;
+    }
+    &__vidarbha-logo{
+        @include padding(0px,5px,0px,0px);
+    }
+    &__top-links{
+        @include margin(0,0,13px,0);
+        @include flex-items(flex, row, end);
+        li{
+            padding-right:20px;
+            a{
+                text-decoration: none;
+                @extend %links;
+            }
+        }
+    
+    }
+    &__small-a{
+        @include a_series(11px,bold,10px);  
+    }
+    &__medium-a{
+        @include a_series(14px,bold,10px);
+    }
+    &__large-a{
+        @include a_series(16px,bold,10px);   
+    }
+    &__upper-right-border{
+        @include border_lines(solid,1px,$border-and-icon-color);
+        padding-right:15px;
+        margin-right:10px;
+    }
+    select{
+        border-style: none;
+        margin-left:5px;
+    }
+    &__color-links{
+        display: flex;
+    }
+    &__color-navy{
+        @extend %colors;
+        background-color:$border-and-icon-color;
+    }
+    &__color-green{
+        @extend %colors;
+        background-color:$icon-green-color;
+    }
+    &__color-yellow{
+        @extend %colors;
+        background-color:$icon-yellow-color;
+    } 
+    &__search-icon-image{
+        padding-right:0;
+    }
+    &__bottom-links{
+        @include flex-items(flex, row, end);
+        align-items: center;
+        li{
+            padding-right:10px;
+            display: flex;
+            align-items: center;
+            a{
+                text-decoration: none;
+                @extend %links;
+            }
+        }
+    }
+    &__bottom-right-border{
+        @include border_lines(solid,1px,$browncolor);
+        margin-right:10px;
+        align-items: center;
+    }
+    &__bottom-right-border:nth-last-child(1){
+        border:none;
+        padding-right:0;
+        margin-right:0;
+    }
+}
+ 
+                
+                
+
+    
+              
+
+                
+                                   
+                
+            
+                
+                
+   

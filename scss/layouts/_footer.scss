@@ -1,0 +1,105 @@
+@import "../helpers/mixin-properties";
+
+footer{
+    @include flex-items(flex, -direction, -content);
+    @include images($crop-image,512.35px,100%,no-repeat);
+    background-size: cover;
+    padding:100px 40px 40px 50px;
+    color:$white-color;
+    margin-top:100px;
+}
+::placeholder{
+    color:$white-color;
+    font-size: 14px;
+    font-family: $lato-family;
+}
+footer{
+    h3{
+        color:$white-color;
+        font-size:22px;
+        font-weight:$bold-weight;
+        font-family:$lato-family;
+        padding-bottom:10px;
+    }
+    input{
+        width:70%;
+        height:44px;
+        background-color:$light-green;
+        border-radius: 20px;
+        border-style:none;
+        padding:0px 300px 0px 10px;
+    }
+    button{
+        position:relative;
+        border-radius: 20px;
+        border:none;
+        font-family:$lato-family;
+        font-weight:$bold-weight;
+        font-size: 16px;
+        top:2px;
+        left:-200px;
+        height:33px;
+        width:20%;
+    }
+}
+.left-section{
+    @include flex-items(flex,column, space-around);
+    width:1000px;
+}
+
+.links-section{
+    @include flex-items(flex,row, -content);
+    margin-top:30px;
+}
+.about-links-section{
+    padding-right: 100px;
+}
+.important-inks-section{
+    padding-right: 100px;
+}
+.copyright-section{
+    @include flex-items(flex, -direction,space-between);
+    margin-top:50px;
+    font-size:12px;
+}
+.poweredby{
+    padding-right:200px;
+}
+li{
+    list-style-type: none;
+}
+.right-section{
+    @include flex-items(flex,column,-content);
+    background-color:$dark-green;
+    height:400px;
+    width:371px;
+    position:absolute;
+    left:900px;
+    padding:10px;
+    flex-wrap: nowrap;
+    
+}
+.image-icon{
+    position: relative;
+    top:40px;
+}
+.card-image-heading{
+    font-size:18px;
+}
+.description-section{
+    padding-left:50px;
+}
+p{
+    font-size:14px;
+}
+hr{
+    width:80%;
+    border:1px solid $green-background-color;
+    margin-top:10px;
+}
+.follow-us-section{
+    @include flex-items(flex, -direction,space-around);
+    align-items: center;
+    padding-top:20px;
+}
+

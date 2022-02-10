@@ -1,0 +1,44 @@
+%headings{
+    font-size: 43px;
+    font-family: $lato-family;
+    font-weight:900;
+    color:$browncolor;
+}
+%links{
+    font-family: $lato-family;
+    font-size:14px;
+    color:#505050;
+    font-weight:400;
+}
+%colors{
+    border-radius:50%;
+    height:15px;
+    width:15px;
+    border:none;
+    margin-left:10px;
+}
+%project-container{
+    max-width:1125px;
+    width:100%;
+    margin:0 auto;
+    padding:0 15px;
+}
+%knowmore-buttons{
+        font-family: $lato-family;
+        font-size:22px;
+        font-weight:400;
+        padding:10px 20px;
+        text-decoration: none;
+        text-align: center;
+}
+%service-section-names{
+    font-family: $lato-family;
+    font-size:16px;
+    font-weight:900;
+    color:$browncolor;
+}
+%service-section-images{
+    height:75px;
+    width:75px;
+    margin-bottom:21px;
+}

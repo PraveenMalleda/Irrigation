@@ -1,0 +1,16 @@
+@import "../scss/helpers/variables";
+@import "../scss/helpers/mixin-properties";
+@import "../scss/helpers/extend";
+@import "../scss/layouts/header";
+@import "../scss/home/home";
+@import "../scss/layouts/footer";       
+
+*{
+    box-sizing:border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    margin: 0px;
+    font-family: 'Lato', sans-serif;
+}
