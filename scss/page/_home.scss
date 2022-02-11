@@ -1,6 +1,3 @@
-@import "../helpers/mixin-properties";
-@import "../helpers/extend";
-
 /* Tractor-Image_Section */
 .hero-banner{
     position: relative;
@@ -51,32 +48,40 @@
 
 /* Manage and Development Section */
 
-.manage-development-section{
+.manage-development{
     @extend %project-container;
-    margin-top:140px;
+    margin-top:136px;
     display:flex;
     padding-left:59px;
+    position:relative;
     &__elements{
         width:876px;
-        height:218px;
     }
     &__image{
-        height:90px;
-        width:742px;
+        font-size:131px;
+        font-weight: 900;
+        line-height: 1;
+        background-image: url(../images/Tractor.png);
+        font-family:$lato-family;
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+        background-size: cover;
+        background-position:bottom;
     }
     &__heading{
         @extend %headings;  
         padding-left:114px;
-        margin-bottom:15px;  
     }
     &__location-heading{
         @extend %headings;
         text-align:end; 
-        margin-top:15px;
     }
     &__logo{
         position:absolute;
-        right:12%;
+        right:4%;
+        height:168px;
+        width:182px;
     }
 }
    
@@ -85,24 +90,27 @@
     background-image: linear-gradient($white-color,$light-white-color);
     &__elements{
         @extend %project-container;
-        @include padding(122px,0,123px,0);
+        @include padding(120px,0,123px,0);
         display:flex;
         justify-content: space-between;
         align-items: center;
         width:872px;
     }
-    &__list{
-        @extend %service-section-names;
-        width:96px;
+    &__item{
+        width:120px;
         display:flex;
         flex-direction: column;
         align-items: center;
     }
     &__image{
-        @extend %service-section-images;
+        height:75px;
+        width:75px;
+        margin-bottom:21px;
     }
     &__name{
+        @extend %service-section-names;
         text-align: center;
+        text-decoration: none;
     }
 }
 

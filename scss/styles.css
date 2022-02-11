@@ -1,4 +1,4 @@
-.manage-development-section__heading, .manage-development-section__location-heading {
+.manage-development__heading, .manage-development__location-heading {
   font-size: 43px;
   font-family: lato;
   font-weight: 900;
@@ -20,7 +20,7 @@
   margin-left: 10px;
 }
 
-.header__container, .hero-banner__content, .manage-development-section, .services__elements, .aboutus-section .aboutus-container {
+.header__container, .hero-banner__content, .manage-development, .services__elements, .aboutus-section .aboutus-container {
   max-width: 1125px;
   width: 100%;
   margin: 0 auto;
@@ -36,20 +36,14 @@
   text-align: center;
 }
 
-.services__list {
+.services__name {
   font-family: lato;
   font-size: 16px;
   font-weight: 900;
   color: #505050;
 }
 
-.services__image {
-  height: 75px;
-  width: 75px;
-  margin-bottom: 21px;
-}
-
-.manage-development-section__heading, .manage-development-section__location-heading {
+.manage-development__heading, .manage-development__location-heading {
   font-size: 43px;
   font-family: lato;
   font-weight: 900;
@@ -71,7 +65,7 @@
   margin-left: 10px;
 }
 
-.header__container, .hero-banner__content, .manage-development-section, .services__elements, .aboutus-section .aboutus-container {
+.header__container, .hero-banner__content, .manage-development, .services__elements, .aboutus-section .aboutus-container {
   max-width: 1125px;
   width: 100%;
   margin: 0 auto;
@@ -87,17 +81,11 @@
   text-align: center;
 }
 
-.services__list {
+.services__name {
   font-family: lato;
   font-size: 16px;
   font-weight: 900;
   color: #505050;
-}
-
-.services__image {
-  height: 75px;
-  width: 75px;
-  margin-bottom: 21px;
 }
 
 /* HEADER*/
@@ -265,57 +253,6 @@
   margin-right: 0;
 }
 
-.manage-development-section__heading, .manage-development-section__location-heading {
-  font-size: 43px;
-  font-family: lato;
-  font-weight: 900;
-  color: #505050;
-}
-
-.header__top-links li a, .header__bottom-links li a {
-  font-family: lato;
-  font-size: 14px;
-  color: #505050;
-  font-weight: 400;
-}
-
-.header__color-navy, .header__color-green, .header__color-yellow {
-  border-radius: 50%;
-  height: 15px;
-  width: 15px;
-  border: none;
-  margin-left: 10px;
-}
-
-.header__container, .hero-banner__content, .manage-development-section, .services__elements, .aboutus-section .aboutus-container {
-  max-width: 1125px;
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-
-.hero-banner__button, .aboutus-section .aboutus-container .text-section .aboutus-button {
-  font-family: lato;
-  font-size: 22px;
-  font-weight: 400;
-  padding: 10px 20px;
-  text-decoration: none;
-  text-align: center;
-}
-
-.services__list {
-  font-family: lato;
-  font-size: 16px;
-  font-weight: 900;
-  color: #505050;
-}
-
-.services__image {
-  height: 75px;
-  width: 75px;
-  margin-bottom: 21px;
-}
-
 /* Tractor-Image_Section */
 .hero-banner {
   position: relative;
@@ -392,37 +329,45 @@
 }
 
 /* Manage and Development Section */
-.manage-development-section {
-  margin-top: 140px;
+.manage-development {
+  margin-top: 136px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding-left: 59px;
+  position: relative;
 }
 
-.manage-development-section__elements {
+.manage-development__elements {
   width: 876px;
-  height: 218px;
 }
 
-.manage-development-section__image {
-  height: 90px;
-  width: 742px;
+.manage-development__image {
+  font-size: 131px;
+  font-weight: 900;
+  line-height: 1;
+  background-image: url(../images/Tractor.png);
+  font-family: lato;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-size: cover;
+  background-position: bottom;
 }
 
-.manage-development-section__heading {
+.manage-development__heading {
   padding-left: 114px;
-  margin-bottom: 15px;
 }
 
-.manage-development-section__location-heading {
+.manage-development__location-heading {
   text-align: end;
-  margin-top: 15px;
 }
 
-.manage-development-section__logo {
+.manage-development__logo {
   position: absolute;
-  right: 12%;
+  right: 4%;
+  height: 168px;
+  width: 182px;
 }
 
 .services {
@@ -431,7 +376,7 @@
 }
 
 .services__elements {
-  padding: 122px 0 123px 0;
+  padding: 120px 0 123px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -444,8 +389,8 @@
   width: 872px;
 }
 
-.services__list {
-  width: 96px;
+.services__item {
+  width: 120px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -458,8 +403,15 @@
           align-items: center;
 }
 
+.services__image {
+  height: 75px;
+  width: 75px;
+  margin-bottom: 21px;
+}
+
 .services__name {
   text-align: center;
+  text-decoration: none;
 }
 
 /* About-Us-Section */
