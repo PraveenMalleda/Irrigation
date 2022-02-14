@@ -87,8 +87,8 @@
    
 
 .services{
-    background-image: linear-gradient($white-color,$light-white-color);
-    &__elements{
+    background-image: linear-gradient($white-color  60%,$light-white-color);
+    &__list{
         @extend %project-container;
         @include padding(120px,0,123px,0);
         display:flex;

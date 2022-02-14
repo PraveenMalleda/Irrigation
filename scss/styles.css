@@ -20,52 +20,7 @@
   margin-left: 10px;
 }
 
-.header__container, .hero-banner__content, .manage-development, .services__elements, .aboutus-section .aboutus-container {
-  max-width: 1125px;
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-
-.hero-banner__button, .aboutus-section .aboutus-container .text-section .aboutus-button {
-  font-family: lato;
-  font-size: 22px;
-  font-weight: 400;
-  padding: 10px 20px;
-  text-decoration: none;
-  text-align: center;
-}
-
-.services__name {
-  font-family: lato;
-  font-size: 16px;
-  font-weight: 900;
-  color: #505050;
-}
-
-.manage-development__heading, .manage-development__location-heading {
-  font-size: 43px;
-  font-family: lato;
-  font-weight: 900;
-  color: #505050;
-}
-
-.header__top-links li a, .header__bottom-links li a {
-  font-family: lato;
-  font-size: 14px;
-  color: #505050;
-  font-weight: 400;
-}
-
-.header__color-navy, .header__color-green, .header__color-yellow {
-  border-radius: 50%;
-  height: 15px;
-  width: 15px;
-  border: none;
-  margin-left: 10px;
-}
-
-.header__container, .hero-banner__content, .manage-development, .services__elements, .aboutus-section .aboutus-container {
+.header__container, .hero-banner__content, .manage-development, .services__list, .aboutus-section .aboutus-container {
   max-width: 1125px;
   width: 100%;
   margin: 0 auto;
@@ -371,11 +326,11 @@
 }
 
 .services {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#E6E6E6));
-  background-image: linear-gradient(#ffffff, #E6E6E6);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(60%, #ffffff), to(#E6E6E6));
+  background-image: linear-gradient(#ffffff 60%, #E6E6E6);
 }
 
-.services__elements {
+.services__list {
   padding: 120px 0 123px 0;
   display: -webkit-box;
   display: -ms-flexbox;
