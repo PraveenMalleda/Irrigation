@@ -20,14 +20,14 @@
   margin-left: 10px;
 }
 
-.header__container, .hero-banner__content, .manage-development, .services__list, .aboutus-section .aboutus-container {
+.header__container, .hero-banner__content, .manage-development, .services__list, .aboutus__container {
   max-width: 1125px;
   width: 100%;
   margin: 0 auto;
   padding: 0 15px;
 }
 
-.hero-banner__button, .aboutus-section .aboutus-container .text-section .aboutus-button {
+.hero-banner__button, .aboutus__button {
   font-family: lato;
   font-size: 22px;
   font-weight: 400;
@@ -370,40 +370,24 @@
 }
 
 /* About-Us-Section */
-.aboutus-section {
+.aboutus {
   background-image: url("../Images/paper.png");
   height: 521px;
   width: 100%;
   background-repeat: no-repeat;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: -direction;
-          flex-direction: -direction;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  color: #ffffff;
   background-color: #3f3531;
 }
 
-.aboutus-section .aboutus-container {
+.aboutus__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: -content;
-      -ms-flex-pack: -content;
-          justify-content: -content;
-  position: relative;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.aboutus-section .aboutus-container .plant-image {
+.aboutus__plant-image {
   background-image: url("../Images/plant.png");
   height: 353px;
   width: 556px;
@@ -411,52 +395,38 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: -direction;
-          flex-direction: -direction;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: absolute;
-  top: 17%;
+  margin-top: 94px;
 }
 
-.aboutus-section .aboutus-container .text-section {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: -content;
-      -ms-flex-pack: -content;
-          justify-content: -content;
-  height: 308px;
+.aboutus__text {
   width: 395px;
-  position: absolute;
-  top: 15%;
-  left: 58%;
+  margin-top: 85px;
+  margin-right: 66px;
 }
 
-.aboutus-section .aboutus-container .text-section .vidc-heading {
+.aboutus__heading {
   font-size: 36px;
   font-family: lato;
+  color: #ffffff;
+  padding-bottom: 27px;
 }
 
-.aboutus-section .aboutus-container .text-section .vidc-description {
+.aboutus__description {
   font-size: 16px;
   font-family: lato;
   font-weight: regular;
-  padding: 2px;
+  padding-bottom: 27px;
   margin-bottom: 10px;
+  color: #ffffff;
 }
 
-.aboutus-section .aboutus-container .text-section .aboutus-button {
+.aboutus__button {
   color: #ffffff;
   background-color: #44AF72;
 }

@@ -118,46 +118,44 @@
 
 
 /* About-Us-Section */
-.aboutus-section{
+.aboutus{
     @include images( url("../Images/paper.png"),521px ,100% ,no-repeat );
-    @include flex-items(flex, -direction,space-between);
-    color:$white-color;
     background-color:$background-color-brown;
-    .aboutus-container{
+    &__container{
         @extend %project-container;
-        @include flex-items(flex,row,-content); 
-        position: relative;
-        .plant-image{
-            @include images(url("../Images/plant.png"),353px ,556px ,no-repeat );
-            @include flex-items(flex, -direction,center);
-            align-items:center;
-            position: absolute;
-            top:17%
-        }
-        .text-section{
-            @include flex-items(flex,column,-content);
-            height:308px;
-            width:395px;
-            position: absolute;
-            top:15%;
-            left:58%;
-            .vidc-heading{
-                font-size: 36px;
-                font-family: lato;
-            }
-            .vidc-description{
-                font-size:16px;
-                font-family:$lato-family;
-                font-weight: regular;
-                padding:2px;
-                margin-bottom: 10px;
-            }
-            .aboutus-button{
-                @extend %knowmore-buttons;
-                color:$white-color;
-                background-color:$aboutus-button;
-            }   
-        }
+        display: flex;
+        justify-content: space-between;
+    }
+    &__plant-image{
+        @include images(url("../Images/plant.png"),353px ,556px ,no-repeat );
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        margin-top: 94px;
+    }
+    &__text{
+        width:395px;
+        margin-top: 85px;
+        margin-right:66px;
+    }
+    &__heading{
+        font-size: 36px;
+        font-family: lato;
+        color:$white-color;
+        padding-bottom: 27px;   
+    }
+    &__description{
+        font-size:16px;
+        font-family:$lato-family;
+        font-weight: regular;
+        padding-bottom: 27px;;
+        margin-bottom: 10px;
+        color:$white-color;
+    }
+    &__button{
+        @extend %knowmore-buttons;
+        color:$white-color;
+        background-color:$aboutus-button;
     }
 }
 
