@@ -7,7 +7,7 @@
     position:relative;
     &__container{
         background-color: $white-color;
-        @extend %project-container;
+        @extend %container;
     }
     &__nav-container{
     @include flex-items(flex, row, space-between);

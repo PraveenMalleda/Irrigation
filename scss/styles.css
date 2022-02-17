@@ -289,7 +289,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-left: 59px;
+  padding-left: 74px;
   position: relative;
 }
 
@@ -301,7 +301,7 @@
   font-size: 131px;
   font-weight: 900;
   line-height: 1;
-  background-image: url(../images/Tractor.png);
+  background-image: url(../images/tractor.png);
   font-family: lato;
   color: transparent;
   -webkit-background-clip: text;
@@ -326,12 +326,12 @@
 }
 
 .services {
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(60%, #ffffff), to(#E6E6E6));
-  background-image: linear-gradient(#ffffff 60%, #E6E6E6);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(100%, #ffffff), to(#E6E6E6));
+  background-image: linear-gradient(#ffffff 100%, #E6E6E6 100%);
 }
 
 .services__list {
-  padding: 120px 0 123px 0;
+  padding: 120px 15px 123px 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -341,7 +341,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 872px;
+  width: 903px;
 }
 
 .services__item {
@@ -356,6 +356,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-decoration: none;
 }
 
 .services__image {
@@ -366,7 +367,7 @@
 
 .services__name {
   text-align: center;
-  text-decoration: none;
+  text-transform: uppercase;
 }
 
 /* About-Us-Section */
