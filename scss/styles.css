@@ -372,42 +372,33 @@
 
 /* About-Us-Section */
 .aboutus {
-  background-image: url("../Images/paper.png");
+  background-image: url("../images/paper.png");
   height: 521px;
   width: 100%;
   background-repeat: no-repeat;
   background-color: #3f3531;
 }
 
-.aboutus__container {
+.aboutus__elements {
+  padding-top: 91px;
+  padding-bottom: 77px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  position: relative;
 }
 
-.aboutus__plant-image {
-  background-image: url("../Images/plant.png");
-  height: 353px;
-  width: 556px;
-  background-repeat: no-repeat;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-top: 94px;
+.aboutus__play-button {
+  position: absolute;
+  top: 45%;
+  left: 22%;
 }
 
 .aboutus__text {
   width: 395px;
-  margin-top: 85px;
   margin-right: 66px;
 }
 
@@ -415,21 +406,21 @@
   font-size: 36px;
   font-family: lato;
   color: #ffffff;
-  padding-bottom: 27px;
+  margin-bottom: 27px;
 }
 
 .aboutus__description {
   font-size: 16px;
   font-family: lato;
-  font-weight: regular;
-  padding-bottom: 27px;
-  margin-bottom: 10px;
+  font-weight: 400;
+  margin-bottom: 36px;
   color: #ffffff;
 }
 
 .aboutus__button {
   color: #ffffff;
   background-color: #44AF72;
+  display: inline-block;
 }
 
 footer {

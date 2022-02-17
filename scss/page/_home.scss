@@ -120,43 +120,46 @@
 
 /* About-Us-Section */
 .aboutus{
-    @include images( url("../Images/paper.png"),521px ,100% ,no-repeat );
+    @include images( url("../images/paper.png"),521px ,100% ,no-repeat );
     background-color:$background-color-brown;
     &__container{
         @extend %container;
+    }
+    &__elements{
+        padding-top:91px;
+        padding-bottom:77px;
         display: flex;
         justify-content: space-between;
+        position:relative;
     }
-    &__plant-image{
-        @include images(url("../Images/plant.png"),353px ,556px ,no-repeat );
-        display: flex;
-        justify-content: center;
-        align-items:center;
-        margin-top: 94px;
+    &__play-button{
+        position:absolute;
+        top:45%;
+        left:22%;
+
     }
     &__text{
         width:395px;
-        margin-top: 85px;
         margin-right:66px;
     }
     &__heading{
         font-size: 36px;
         font-family: lato;
         color:$white-color;
-        padding-bottom: 27px;   
+        margin-bottom: 27px;   
     }
     &__description{
         font-size:16px;
         font-family:$lato-family;
-        font-weight: regular;
-        padding-bottom: 27px;;
-        margin-bottom: 10px;
+        font-weight: 400;
+        margin-bottom:36px;
         color:$white-color;
     }
     &__button{
         @extend %knowmore-buttons;
         color:$white-color;
         background-color:$aboutus-button;
+        display: inline-block;
     }
 }
 
