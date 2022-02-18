@@ -1,103 +1,188 @@
-footer{
-    @include flex-items(flex, -direction, -content);
-    @include images($crop-image,512.35px,100%,no-repeat);
+.footer{
+    background-image: url("./../images/cropimage.png");
+    margin-top:80px;
     background-size: cover;
-    padding:100px 40px 40px 50px;
-    color:$white-color;
-    margin-top:100px;
-}
-::placeholder{
-    color:$white-color;
-    font-size: 14px;
-    font-family: $lato-family;
-}
-footer{
-    h3{
+    &__container{
+        @extend %container;
+    }
+    li{
+        list-style-type: none;
+    }
+    &__content{
+        width:670px;
+        position: relative;
+    }
+    &__subscribe-elements{
+        padding-top:133px;
+    }
+    &__subscribe-heading{
         color:$white-color;
         font-size:22px;
-        font-weight:$bold-weight;
+        font-weight:700;
         font-family:$lato-family;
-        padding-bottom:10px;
+        margin-bottom:24px;
     }
-    input{
-        width:70%;
-        height:44px;
+    &__input{
+        width:670px;
         background-color:$light-green;
         border-radius: 20px;
         border-style:none;
-        padding:0px 300px 0px 10px;
+        padding:18px 0 18px 19px;
     }
-    button{
-        position:relative;
-        border-radius: 20px;
-        border:none;
+    ::placeholder{
+        color:$white-color;
+        font-size: 14px;
+        font-family: $lato-family;
+        font-weight:400;
+    }
+    &__button{
+        border-radius: 26px;
         font-family:$lato-family;
-        font-weight:$bold-weight;
+        font-weight:700;
         font-size: 16px;
-        top:2px;
-        left:-200px;
-        height:33px;
-        width:20%;
+        color:$light-brown;
+        background-color: $white-color;
+        padding:12px 34px;
+        position:absolute;
+        top: 33%;
+        right:1%;
+        text-decoration: none;
+        display: inline-block;
     }
-}
-.left-section{
-    @include flex-items(flex,column, space-around);
-    width:1000px;
+    &__links{
+        margin-top:27px;
+        display: flex;
+    }
+    &__content-links{
+        margin-right:101px;
+    }
+    &__links-heading{
+        margin-bottom:17px;
+        font-family: $lato-family;
+        font-weight: 700;
+        font-size:18px;
+        color:$white-color;
+    }
+    &__extra-links{
+        margin-top:36px;
+    }
+    &__item{
+        font-family: $lato-family;
+        font-size:14px;
+        color:$white-color;
+        text-decoration: none;
+        margin-bottom: 15px;
+        text-transform: capitalize;
+        display: inline-block;
+    }
+    &__last-item{
+        margin-bottom: 0px;
+    }
+    &__contact-details{
+        background-color:$dark-green;
+        width:371px;
+        position:absolute;
+        left:108%;
+        top:20%;
+    }
+    &__contact-details-elements{
+        margin:40px 38px 32px 30px;
+    }
+    &__contact{
+        display: flex;
+        margin-bottom:20px;
+    }
+    &__location-image{
+        height: 30px;
+        width:23px;
+        margin-top:23px;
+    }
+    &__mail-image{
+        height:22px;
+        width:32px;
+        margin-top:10px;
+    }
+    &__contact-image{
+        height:33px;
+        width:23px;
+        margin-top:10px;
+    }
+    &__contact-text{
+        margin-left:26px;
+        display: flex;
+        flex-direction: column;
+        width:100%;
+        border-bottom: 2px solid $light-green-color;
+    }
+    &__contact-heading{
+        font-size:18px;
+        font-weight:700;
+        font-family: $lato-family;
+        color:$white-color;
+        margin-bottom:11px;
+    }
+    &__mail{
+        margin-bottom: 0px;;
+    }
+    &__details{
+        font-size:14px;
+        font-weight:400;
+        font-family: $lato-family;
+        color:$white-color;
+        text-decoration: none;
+        margin-bottom:22px;
+    }
+    &__follow-us{
+        display: flex;
+        margin-top:40px;
+    }
+    &__follow-us-heading{
+        font-size:18px;
+        font-family:$lato-family;
+        font-weight:700;
+        color:$white-color;
+        padding-right:27px;
+        border-right: 2px solid $light-green-color;
+    }
+    &__icon{
+        color:white;
+        margin-left:22px;
+    }
+    &__copyright{
+        padding:70px 0px 40px 0px;
+        width:715px;
+        display: flex;
+        justify-content: space-between;
+
+    }
+    &__copyright-brand-text{
+        color:$white-color;
+        font-family: $lato-family;
+        font-weight:700;
+        font-size:12px;
+        text-transform: capitalize;
+    }
+    &__copyright-text{
+        color:$white-color;
+        font-family: $lato-family;
+        font-weight:400;
+        font-size:12px;
+
+    }
+    &__poweredby{
+        color:$white-color;
+        font-family: $lato-family;
+        font-weight: 900;
+        font-size:12px;
+        margin-bottom:10px;
+    }
+    &__business-entity{
+        color:$white-color;
+        font-family: $lato-family;
+        font-weight: 400;
+        font-size:12px;
+
+    }
 }
 
-.links-section{
-    @include flex-items(flex,row, -content);
-    margin-top:30px;
-}
-.about-links-section{
-    padding-right: 100px;
-}
-.important-inks-section{
-    padding-right: 100px;
-}
-.copyright-section{
-    @include flex-items(flex, -direction,space-between);
-    margin-top:50px;
-    font-size:12px;
-}
-.poweredby{
-    padding-right:200px;
-}
-li{
-    list-style-type: none;
-}
-.right-section{
-    @include flex-items(flex,column,-content);
-    background-color:$dark-green;
-    height:400px;
-    width:371px;
-    position:absolute;
-    left:900px;
-    padding:10px;
-    flex-wrap: nowrap;
-    
-}
-.image-icon{
-    position: relative;
-    top:40px;
-}
-.card-image-heading{
-    font-size:18px;
-}
-.description-section{
-    padding-left:50px;
-}
-p{
-    font-size:14px;
-}
-hr{
-    width:80%;
-    border:1px solid $green-background-color;
-    margin-top:10px;
-}
-.follow-us-section{
-    @include flex-items(flex, -direction,space-around);
-    align-items: center;
-    padding-top:20px;
-}
 
