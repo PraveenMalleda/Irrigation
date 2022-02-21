@@ -125,6 +125,7 @@
 .aboutus{
     @include images( url("../images/paper.png"),521px ,100% ,no-repeat );
     background-color:$background-color-brown;
+    margin-bottom:84px;
     &__container{
         @extend %container;
     }
@@ -161,7 +162,13 @@
     &__button{
         @extend %knowmore-buttons;
         color:$white-color;
-        background-color:$aboutus-button;
+        background-color:$green;
+        display: inline-block;
+    }
+    &__button:hover{
+        @extend %knowmore-buttons;
+        color:$white-color;
+        background-color:$dark-green;
         display: inline-block;
     }
 }

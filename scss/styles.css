@@ -27,7 +27,7 @@
   padding: 0 15px;
 }
 
-.hero-banner__button, .aboutus__button {
+.hero-banner__button, .aboutus__button, .aboutus__button:hover {
   font-family: lato;
   font-size: 22px;
   font-weight: 400;
@@ -383,6 +383,7 @@
   width: 100%;
   background-repeat: no-repeat;
   background-color: #3f3531;
+  margin-bottom: 84px;
 }
 
 .aboutus__elements {
@@ -429,9 +430,14 @@
   display: inline-block;
 }
 
+.aboutus__button:hover {
+  color: #ffffff;
+  background-color: #0F5C30;
+  display: inline-block;
+}
+
 .footer {
   background-image: url("./../images/cropimage.png");
-  margin-top: 80px;
   background-size: cover;
 }
 
@@ -440,12 +446,12 @@
 }
 
 .footer__content {
-  width: 670px;
   position: relative;
 }
 
 .footer__subscribe-elements {
   padding-top: 133px;
+  width: 714px;
 }
 
 .footer__subscribe-heading {
@@ -454,6 +460,7 @@
   font-weight: 700;
   font-family: lato;
   margin-bottom: 24px;
+  display: block;
 }
 
 .footer__input {
@@ -461,6 +468,7 @@
   background-color: #186a3b;
   border-radius: 20px;
   border-style: none;
+  color: #ffffff;
   padding: 18px 0 18px 19px;
 }
 
@@ -494,6 +502,7 @@
 
 .footer__button {
   border-radius: 26px;
+  border: none;
   font-family: lato;
   font-weight: 700;
   font-size: 16px;
@@ -502,7 +511,7 @@
   padding: 12px 34px;
   position: absolute;
   top: 33%;
-  right: 1%;
+  right: 39%;
   text-decoration: none;
   display: inline-block;
 }
@@ -548,7 +557,7 @@
   background-color: #0F5C30;
   width: 371px;
   position: absolute;
-  left: 108%;
+  right: 0%;
   top: 20%;
 }
 

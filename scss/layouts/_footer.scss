@@ -1,6 +1,5 @@
 .footer{
     background-image: url("./../images/cropimage.png");
-    margin-top:80px;
     background-size: cover;
     &__container{
         @extend %container;
@@ -9,11 +8,11 @@
         list-style-type: none;
     }
     &__content{
-        width:670px;
         position: relative;
     }
     &__subscribe-elements{
         padding-top:133px;
+        width:714px;
     }
     &__subscribe-heading{
         color:$white-color;
@@ -21,12 +20,14 @@
         font-weight:700;
         font-family:$lato-family;
         margin-bottom:24px;
+        display:block;
     }
     &__input{
         width:670px;
         background-color:$light-green;
         border-radius: 20px;
         border-style:none;
+        color:$white-color;
         padding:18px 0 18px 19px;
     }
     ::placeholder{
@@ -37,6 +38,7 @@
     }
     &__button{
         border-radius: 26px;
+        border: none;
         font-family:$lato-family;
         font-weight:700;
         font-size: 16px;
@@ -45,7 +47,7 @@
         padding:12px 34px;
         position:absolute;
         top: 33%;
-        right:1%;
+        right:39%;
         text-decoration: none;
         display: inline-block;
     }
@@ -82,7 +84,7 @@
         background-color:$dark-green;
         width:371px;
         position:absolute;
-        left:108%;
+        right:0%;
         top:20%;
     }
     &__contact-details-elements{
