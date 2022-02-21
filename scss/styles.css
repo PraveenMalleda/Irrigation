@@ -452,6 +452,7 @@
 .footer__subscribe-elements {
   padding-top: 133px;
   width: 714px;
+  display: inline-block;
 }
 
 .footer__subscribe-heading {
