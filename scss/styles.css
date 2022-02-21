@@ -103,6 +103,7 @@
 
 .header__top-links li {
   padding-right: 20px;
+  list-style-type: none;
 }
 
 .header__top-links li a {
@@ -186,6 +187,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  list-style-type: none;
 }
 
 .header__bottom-links li a {
@@ -342,6 +344,10 @@
       -ms-flex-align: center;
           align-items: center;
   width: 903px;
+}
+
+.services li {
+  list-style-type: none;
 }
 
 .services__item {
