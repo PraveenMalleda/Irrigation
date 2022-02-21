@@ -3,12 +3,10 @@
     background-size: cover;
     &__container{
         @extend %container;
+        position: relative;
     }
     li{
         list-style-type: none;
-    }
-    &__content{
-        position: relative;
     }
     &__subscribe-elements{
         padding-top:133px;
@@ -53,7 +51,7 @@
     }
     &__links{
         margin-top:27px;
-        display: flex;
+        display: inline-flex;
     }
     &__content-links{
         margin-right:101px;
@@ -153,7 +151,7 @@
     &__copyright{
         padding:70px 0px 40px 0px;
         width:715px;
-        display: flex;
+        display: inline-flex;
         justify-content: space-between;
 
     }

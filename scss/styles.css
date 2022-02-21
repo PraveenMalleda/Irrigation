@@ -441,12 +441,12 @@
   background-size: cover;
 }
 
-.footer li {
-  list-style-type: none;
+.footer__container {
+  position: relative;
 }
 
-.footer__content {
-  position: relative;
+.footer li {
+  list-style-type: none;
 }
 
 .footer__subscribe-elements {
@@ -518,9 +518,9 @@
 
 .footer__links {
   margin-top: 27px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
 }
 
 .footer__content-links {
@@ -648,9 +648,9 @@
 .footer__copyright {
   padding: 70px 0px 40px 0px;
   width: 715px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
