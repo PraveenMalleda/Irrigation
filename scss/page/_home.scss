@@ -15,11 +15,11 @@
         right:0;
     }
     &__heading{
-        @include banner_section($white-color,$green-background-color,$lato-family,57px,900,5px); 
+        @include banner_section($white-color,$green-background-color,$primary-font,57px,900,5px); 
         @include padding(0,20px,0,20px);
     }
     &__sub-heading{
-        @include banner_section($white-color,$dark-green,$lato-family,35px,900,30px); 
+        @include banner_section($white-color,$dark-green,$primary-font,35px,900,30px); 
         @include padding(12px,21px,12px,21px); 
     }
     &__button{
@@ -62,7 +62,7 @@
         font-weight: 900;
         line-height: 1;
         background-image: url(../images/tractor.png);
-        font-family:$lato-family;
+        font-family:$primary-font;
         color: transparent;
         -webkit-background-clip: text;
         background-clip: text;
@@ -123,18 +123,24 @@
 
 /* About-Us-Section */
 .aboutus{
-    @include images( url("../images/paper.png"),521px ,100% ,no-repeat );
+    // @include images( url("../images/paper.png"),521px ,100% ,no-repeat );
     background-color:$background-color-brown;
     margin-bottom:84px;
+    position: relative;
+    &__paper-image{
+        display: block;
+    }
     &__container{
         @extend %container;
+        position: absolute;
+        top:2%;
+        right: 10%;
     }
     &__elements{
         padding-top:91px;
         padding-bottom:77px;
         display: flex;
         justify-content: space-between;
-        position:relative;
     }
     &__play-button{
         position:absolute;
@@ -154,7 +160,7 @@
     }
     &__description{
         font-size:16px;
-        font-family:$lato-family;
+        font-family:$primary-font;
         font-weight: 400;
         margin-bottom:36px;
         color:$white-color;
@@ -172,6 +178,7 @@
         display: inline-block;
     }
 }
+    
 
 
 
