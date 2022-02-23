@@ -133,19 +133,21 @@
     &__container{
         @extend %container;
         position: absolute;
-        top:2%;
-        right: 10%;
+        top:15%;
+        right:0;
+        left:0;
     }
     &__elements{
-        padding-top:91px;
-        padding-bottom:77px;
         display: flex;
         justify-content: space-between;
     }
+    &__plant-image{
+        position:relative;
+    }
     &__play-button{
         position:absolute;
-        top:45%;
-        left:22%;
+        top:42%;
+        left:40%;
 
     }
     &__text{
