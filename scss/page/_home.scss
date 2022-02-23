@@ -123,7 +123,6 @@
 
 /* About-Us-Section */
 .aboutus{
-    // @include images( url("../images/paper.png"),521px ,100% ,no-repeat );
     background-color:$background-color-brown;
     margin-bottom:84px;
     position: relative;
@@ -148,7 +147,6 @@
         position:absolute;
         top:42%;
         left:40%;
-
     }
     &__text{
         width:395px;
