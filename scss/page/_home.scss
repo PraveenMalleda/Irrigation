@@ -13,19 +13,74 @@
         top:45%;
         left:0;
         right:0;
+        @include breakpoint(ipad-max){
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right:0;   
+        }
+        @include breakpoint(mobile-max){
+            position: absolute;
+            top:55%;
+            left: 0;
+            right:0;
+        }
+        @include breakpoint(portrait-mobile-max){
+            position: absolute;
+            top:40%;
+            left: 0;
+            right:0;
+        }
     }
     &__heading{
         @include banner_section($white-color,$green-background-color,$primary-font,57px,900,5px); 
         @include padding(0,20px,0,20px);
+        @include breakpoint(ipad-max){
+            font-size:35px;
+            padding:0 10px;
+        }
+        @include breakpoint(mobile-max){
+            font-size: 25px;
+            padding:0 10px;
+        }
+        @include breakpoint(portrait-mobile-max){
+            font-size:20x;
+            padding:0 5px;
+        }
     }
     &__sub-heading{
         @include banner_section($white-color,$dark-green,$primary-font,35px,900,30px); 
         @include padding(12px,21px,12px,21px); 
+        @include breakpoint(ipad-max){
+            font-size:30px;
+            margin-bottom: 15px;
+            padding:10px 15px;
+        }
+        @include breakpoint(mobile-max){
+            font-size: 20px;
+            margin-bottom:10px;
+            padding:7px 12px;
+        }
+        @include breakpoint(portrait-mobile-max){
+            font-size:15x;
+            margin-bottom:8px;
+            padding:5px 10px;
+        }
     }
     &__button{
         @extend %knowmore-buttons;
         color:$banner-button-color;
         background-color: $white-color;
+        @include breakpoint(ipad-max){
+            font-size:15px;
+            padding:5px 10px;
+        }
+        @include breakpoint(mobile-max){
+            font-size: 10px;
+        }
+        @include breakpoint(portrait-mobile-max){
+            font-size:8px;
+        }
     }
     &__bottom-icon-background{
         @include flex-items(flex,-direction,center);
@@ -34,11 +89,29 @@
         padding:25px;
         left:50%;
         bottom:-6%;
+        @include breakpoint(ipad-max){
+            padding:15px;
+        }
+        @include breakpoint(mobile-max){
+            padding:10px;
+        }
+        @include breakpoint(portrait-mobile-max){
+            padding:8px;
+        }
     }
     &__bottom-icon{
         border:2px solid $white-color;
         top:40%;
         padding:10px 6px;
+        @include breakpoint(ipad-max){
+            padding:5px 3px;
+        }
+        @include breakpoint(mobile-max){
+            padding:4px 2px;
+        }
+        @include breakpoint(portrait-mobile-max){
+            padding:3px 1px;
+        }
     }
 
 
@@ -54,8 +127,29 @@
     display:flex;
     padding-left:74px;
     position:relative;
+    @include breakpoint(ipad-max){
+        margin-top:75px;
+        padding-left:140px;   
+    }
+    @include breakpoint(mobile-max){
+        margin-top:60px;
+        padding-left: 74px;
+    }
+    @include breakpoint(portrait-mobile-max){
+        margin-top:60px;
+        padding-left:89px;
+    }
     &__elements{
         width:876px;
+        @include breakpoint(ipad-max){
+            width:655px;  
+        }
+        @include breakpoint(mobile-max){
+            width:520px;
+        }
+        @include breakpoint(portrait-mobile-max){
+            width:341px;
+        }
     }
     &__image{
         font-size:131px;
@@ -68,20 +162,68 @@
         background-clip: text;
         background-size: cover;
         background-position:bottom;
+        @include breakpoint(ipad-max){
+            font-size:95px; 
+        }
+        @include breakpoint(mobile-max){
+            font-size:77px;
+        }
+        @include breakpoint(portrait-mobile-max){
+            font-size: 50px;
+        }
     }
     &__heading{
         @extend %headings;  
         padding-left:114px;
+        @include breakpoint(ipad-max){
+            padding-left: 40px;
+            font-size: 35px;
+        }
+        @include breakpoint(mobile-max){
+            font-size:28px;
+            padding-left:60px;
+        }
+        @include breakpoint(portrait-mobile-max){
+            font-size:20px;
+            padding-left:40px;
+        }
     }
     &__location-heading{
         @extend %headings;
         text-align:end; 
+        @include breakpoint(ipad-max){
+            font-size: 35px;
+        }
+        @include breakpoint(mobile-max){
+            font-size:25px;
+        }
+        @include breakpoint(portrait-mobile-max){
+            font-size: 17px;
+        }
     }
     &__logo{
         position:absolute;
         right:4%;
         height:168px;
         width:182px;
+        @include breakpoint(ipad-max){
+            position:absolute;
+            right:11%;
+            height:128px;
+            width:135px;
+        }
+        @include breakpoint(mobile-max){
+            position:absolute;
+            right:12%;
+            height:100px;
+            width:110px;
+        }
+        @include breakpoint(portrait-mobile-max){
+            position: absolute;
+            right:18%;
+            height:68px;
+            width:68px;
+        }
     }
 }
    
@@ -95,6 +237,18 @@
         justify-content: space-between;
         align-items: center;
         width:903px;
+        @include breakpoint(ipad-max){
+            width:650px;
+            padding:70px 10px;
+        }
+        @include breakpoint(mobile-max){
+            width:498px;
+            padding:40px 5px;
+        }
+        @include breakpoint(portrait-mobile-max){
+            width:358px;
+            padding:30px 5px;
+        }
     }
     li{
         list-style-type: none;
@@ -105,16 +259,49 @@
         flex-direction: column;
         align-items: center;
         text-decoration: none;
+        @include breakpoint(ipad-max){
+            width:80px;  
+        }
+        @include breakpoint(mobile-max){
+            width:55px;
+        }
+        @include breakpoint(portrait-mobile-max){
+            width:45px;
+        }
     }
     &__image{
         height:75px;
         width:75px;
         margin-bottom:21px;
+        @include breakpoint(ipad-max){
+            height:40px;
+            width:40px;
+            margin-bottom: 15px; 
+        }
+        @include breakpoint(mobile-max){
+            height:30px;
+            width:30px;
+            margin-bottom: 10px;
+        }
+        @include breakpoint(portrait-mobile-max){
+            height:20px;
+            width:20px;
+            margin-bottom: 8px;
+        }
     }
     &__name{
         @extend %service-section-names;
         text-align: center;
         text-transform: uppercase;
+        @include breakpoint(ipad-max){
+            font-size:10px;  
+        }
+        @include breakpoint(mobile-max){
+            font-size:10px;
+        }
+        @include breakpoint(portrait-mobile-max){
+            font-size: 8px;
+        }
     }
 }
 
@@ -126,6 +313,9 @@
     background-color:$background-color-brown;
     margin-bottom:84px;
     position: relative;
+    @include breakpoint(ipad-max){
+        margin-bottom: 50px;
+    }
     &__paper-image{
         display: block;
     }
@@ -135,6 +325,12 @@
         top:15%;
         right:0;
         left:0;
+        @include breakpoint(ipad-max){
+            position: absolute;
+            top:10%;
+            right:0;
+            left:0;
+        }
     }
     &__elements{
         display: flex;
@@ -142,21 +338,40 @@
     }
     &__plant-image{
         position:relative;
+        height:352px;
+        width:556px;
+        @include breakpoint(ipad-max){
+            height:130px;
+            width:270px;
+        }
     }
     &__play-button{
         position:absolute;
         top:42%;
         left:40%;
+        @include breakpoint(ipad-max){
+            position: absolute;
+            top:20%;
+            left:20%;
+        }
     }
     &__text{
         width:395px;
         margin-right:66px;
+        @include breakpoint(ipad-max){
+            width:200px;
+            margin-top:35px;
+        }
     }
     &__heading{
         font-size: 36px;
         font-family: lato;
         color:$white-color;
-        margin-bottom: 27px;   
+        margin-bottom: 27px;
+        @include breakpoint(ipad-max){
+            font-size: 20px;
+            margin-bottom: 18px;
+        }   
     }
     &__description{
         font-size:16px;
@@ -164,17 +379,29 @@
         font-weight: 400;
         margin-bottom:36px;
         color:$white-color;
+        @include breakpoint(ipad-max){
+            font-size: 10px;
+            margin-bottom: 18px;
+        }
     }
     &__button{
         @extend %knowmore-buttons;
         color:$white-color;
         background-color:$green;
         display: inline-block;
+        @include breakpoint(ipad-max){
+            font-size:15px;
+            padding:5px 10px;
+        }
         &:hover{
             @extend %knowmore-buttons;
             color:$white-color;
             background-color:$dark-green;
             display: inline-block;
+            @include breakpoint(ipad-max){
+                font-size:15px;
+                padding:5px 10px;
+            }
         }
     }
 }
