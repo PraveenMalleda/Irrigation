@@ -37,12 +37,12 @@
         border-style:none;
         color:$white-color;
         padding:18px 0 18px 19px;
-    }
-    ::placeholder{
-        color:$white-color;
-        font-size: 14px;
-        font-family: $primary-font;
-        font-weight:400;
+        &::placeholder{
+            color:$white-color;
+            font-size: 14px;
+            font-family: $primary-font;
+            font-weight:400;
+        }
     }
     &__button{
         height:37px;
@@ -157,7 +157,6 @@
         font-size:12px;
         color:$white-color;
         font-family: $primary-font;
-
     }
     &__copyright-brand-text{
         font-weight:700;

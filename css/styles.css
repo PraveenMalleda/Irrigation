@@ -364,7 +364,7 @@
   color: #ffffff;
   padding: 18px 0 18px 19px;
 }
-.footer ::placeholder {
+.footer__input::placeholder {
   color: #ffffff;
   font-size: 14px;
   font-family: lato;

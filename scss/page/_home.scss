@@ -170,12 +170,12 @@
         color:$white-color;
         background-color:$green;
         display: inline-block;
-    }
-    &__button:hover{
-        @extend %knowmore-buttons;
-        color:$white-color;
-        background-color:$dark-green;
-        display: inline-block;
+        &:hover{
+            @extend %knowmore-buttons;
+            color:$white-color;
+            background-color:$dark-green;
+            display: inline-block;
+        }
     }
 }
     
