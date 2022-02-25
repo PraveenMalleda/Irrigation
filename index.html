@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 
@@ -22,7 +23,7 @@
                     <img class="header__vidarbha-logo" src="Images/vidharbalogo.png" alt="Vidarbha-logo">
                     <span>VIDARBHA IRRIGATION DEVELOPMENT CORPORATION</span>
                 </a>
-                <div>
+                <div id="show" class="header__hide">
                     <ul class="header__top-links">
                         <li><a href="">About Us</a></li>
                         <li><a href="">Tenders</a></li>
@@ -54,12 +55,13 @@
                         <li class="header__bottom-right-border"><a href="">Governing Councils Decesions</a></li>
                     </ul>
                 </div>
+                <i class="fa-solid fa-bars header__icon"  onclick="showMenu()"></i>
             </nav>
         </div>
     </header>
-    <!--Hero Banner-->
+    <!--Hero Banner
     <main>
-        <!--Header-Image-Section-->
+        <!--Header-Image-Section
         <section class="hero-banner">
             <img src="./images/Tractor.png" class="hero-banner__image" alt="Tractor-Image">
             <div class="hero-banner__content">
@@ -71,7 +73,7 @@
                 <span class="hero-banner__bottom-icon"></span>
             </a>
         </section>
-        <!--Manage and Development-Section-->
+        <!-- Manage and Development-Section
         <section class="manage-development">
             <div class="manage-development__elements">
                 <h3 class="manage-development__heading">MANAGE & DEVELOP</h3>
@@ -81,7 +83,7 @@
             <img src="images/mandallogo.png" class="manage-development__logo" alt="mandal logo">
 
         </section>
-        <!-- Services Section-->
+        <!-- Services Section
         <section class="services">
             <ul class="services__list">
                 <li>
@@ -116,7 +118,7 @@
                 </li>
             </ul>
         </section>
-        <!--ABOUT-Us-Section-->
+        <!--ABOUT-Us-Section
         <section class="aboutus">
             <img src="./images/paper.png" alt="" class="aboutus__paper-image">
             <div class="aboutus__container">
@@ -144,9 +146,9 @@
                 </div>
             </div>
         </section>
-    </main>
+    </main> -->
 
-    <!--FOOTER-Section -->
+    <!--FOOTER-Section -
     <footer class="footer">
         <img src="./images/cropimage.png" class="footer__crop-image" alt="cropimage">
         <div class="footer__background">
@@ -229,8 +231,14 @@
                 </div>
             </div>
         </div>
-    </footer>
+    </footer> -->
     <script src="https://kit.fontawesome.com/20c5629a29.js" crossorigin="anonymous"></script>
+    <script>
+        let showId=document.getElementById("show");
+        function showMenu(){
+            showId.classList.toggle("show");
+        }
+    </script>
 </body>
 
 </html>

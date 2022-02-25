@@ -5,10 +5,43 @@
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.11);
     z-index: 1;
     position:relative;
+    @include breakpoint(ipad-max){
+        position: relative; 
+    }
+    &__icon{
+        display: none;
+        @include breakpoint(ipad-max){
+            display: block;  
+            font-size: 35px; 
+        }
+    }
     &__container{
         background-color: $white-color;
         @extend %container;
     }
+    &__hide{
+        @include breakpoint(ipad-max){
+            display:block;
+            position: absolute;
+            top: 150%;
+            left:0;
+            right:0;   
+        }
+
+        @include breakpoint(ipad-max){
+            display: none;   
+        }
+        
+    }
+    // &__hide1{
+    //     @include breakpoint(ipad-max){
+    //         display: block;   
+    //     }
+    //     @include breakpoint(medium-large-desktop-max){
+    //         display: none;   
+    //     }
+
+    // }
     &__nav-container{
     @include flex-items(flex, row, space-between);
     @include padding(15px,0px,22px,0px);
@@ -28,13 +61,32 @@
     &__top-links{
         @include margin(0,0,13px,0);
         @include flex-items(flex, row, end);
+        @include breakpoint(ipad-max){
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            margin: 0;
+        }
         li{
             padding-right:20px;
             list-style-type: none;
+            @include breakpoint(ipad-max){
+                padding: 0;
+                margin-bottom:10px;
+        
+            }
             a{
                 text-decoration: none;
                 @extend %links;
+                @include breakpoint(ipad-max){
+                    font-size: 25px;
+                    margin-bottom: 10px;
+                }
             }
+        }
+        @include breakpoint(ipad-max){
+            display: flex;
+            flex-direction: column;  
         }
     
     }
@@ -51,6 +103,9 @@
         @include border_lines(solid,1px,$border-and-icon-color);
         padding-right:15px;
         margin-right:10px;
+        @include breakpoint(ipad-max){
+            display: none;
+        }
     }
     select{
         border-style: none;
@@ -58,6 +113,9 @@
     }
     &__color-links{
         display: flex;
+        @include breakpoint(ipad-max){
+            display: none;
+        }
     }
     &__color-navy{
         @extend %colors;
@@ -73,6 +131,9 @@
     } 
     &__search-icon-image{
         padding-right:0;
+        @include breakpoint(ipad-max){
+            display: none;   
+        }
     }
     &__bottom-links{
         @include flex-items(flex, row, end);
@@ -81,17 +142,32 @@
             padding-right:10px;
             display: flex;
             align-items: center;
-            list-style-type: none;;
+            list-style-type: none;
+            @include breakpoint(ipad-max){
+                padding: 0;
+        
+            }
             a{
                 text-decoration: none;
                 @extend %links;
+                @include breakpoint(ipad-max){
+                    font-size: 25px;
+                    margin-bottom: 10px;
+                }
             }
+        }
+        @include breakpoint(ipad-max){
+            display: flex;
+            flex-direction: column;  
         }
     }
     &__bottom-right-border{
         @include border_lines(solid,1px,$browncolor);
         margin-right:10px;
         align-items: center;
+        @include breakpoint(ipad-max){
+            border: none;   
+        }
     }
     &__bottom-right-border:nth-last-child(1){
         border:none;
@@ -99,12 +175,12 @@
         margin-right:0;
     }
 }
- 
-                
-                
-
-    
-              
+.show{
+    display: block;
+}
+.hide{
+    display: none;
+}
 
                 
                                    

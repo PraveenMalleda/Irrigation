@@ -49,8 +49,36 @@
   z-index: 1;
   position: relative;
 }
+@media (max-width: 991px) {
+  .header {
+    position: relative;
+  }
+}
+.header__icon {
+  display: none;
+}
+@media (max-width: 991px) {
+  .header__icon {
+    display: block;
+    font-size: 35px;
+  }
+}
 .header__container {
   background-color: #ffffff;
+}
+@media (max-width: 991px) {
+  .header__hide {
+    display: block;
+    position: absolute;
+    top: 150%;
+    left: 0;
+    right: 0;
+  }
+}
+@media (max-width: 991px) {
+  .header__hide {
+    display: none;
+  }
 }
 .header__nav-container {
   display: flex;
@@ -76,12 +104,38 @@
   flex-direction: row;
   justify-content: end;
 }
+@media (max-width: 991px) {
+  .header__top-links {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0;
+  }
+}
 .header__top-links li {
   padding-right: 20px;
   list-style-type: none;
 }
+@media (max-width: 991px) {
+  .header__top-links li {
+    padding: 0;
+    margin-bottom: 10px;
+  }
+}
 .header__top-links li a {
   text-decoration: none;
+}
+@media (max-width: 991px) {
+  .header__top-links li a {
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 991px) {
+  .header__top-links {
+    display: flex;
+    flex-direction: column;
+  }
 }
 .header__small-a {
   font-size: 11px;
@@ -105,12 +159,22 @@
   padding-right: 15px;
   margin-right: 10px;
 }
+@media (max-width: 991px) {
+  .header__upper-right-border {
+    display: none;
+  }
+}
 .header select {
   border-style: none;
   margin-left: 5px;
 }
 .header__color-links {
   display: flex;
+}
+@media (max-width: 991px) {
+  .header__color-links {
+    display: none;
+  }
 }
 .header__color-navy {
   background-color: #265781;
@@ -124,6 +188,11 @@
 .header__search-icon-image {
   padding-right: 0;
 }
+@media (max-width: 991px) {
+  .header__search-icon-image {
+    display: none;
+  }
+}
 .header__bottom-links {
   display: flex;
   flex-direction: row;
@@ -136,8 +205,25 @@
   align-items: center;
   list-style-type: none;
 }
+@media (max-width: 991px) {
+  .header__bottom-links li {
+    padding: 0;
+  }
+}
 .header__bottom-links li a {
   text-decoration: none;
+}
+@media (max-width: 991px) {
+  .header__bottom-links li a {
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 991px) {
+  .header__bottom-links {
+    display: flex;
+    flex-direction: column;
+  }
 }
 .header__bottom-right-border {
   border-right-style: solid;
@@ -146,10 +232,23 @@
   margin-right: 10px;
   align-items: center;
 }
+@media (max-width: 991px) {
+  .header__bottom-right-border {
+    border: none;
+  }
+}
 .header__bottom-right-border:nth-last-child(1) {
   border: none;
   padding-right: 0;
   margin-right: 0;
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
 }
 
 /* Tractor-Image_Section */
