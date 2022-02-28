@@ -55,13 +55,14 @@
                         <li class="header__bottom-right-border"><a href="">Governing Councils Decesions</a></li>
                     </ul>
                 </div>
-                <i class="fa-solid fa-bars header__icon"  onclick="showMenu()"></i>
+                <i class="fa-solid fa-bars header__icon" id="showDetails"  onclick="showMenu()"></i>
+                <i class="fa-solid fa-xmark  header__icon icon" id="closeDetails" onclick="showMenu()"></i>
             </nav>
         </div>
     </header>
-    <!--Hero Banner
+    <!--Hero Banner-->
     <main>
-        <!--Header-Image-Section
+        <!--Header-Image-Section-->
         <section class="hero-banner">
             <img src="./images/Tractor.png" class="hero-banner__image" alt="Tractor-Image">
             <div class="hero-banner__content">
@@ -73,7 +74,7 @@
                 <span class="hero-banner__bottom-icon"></span>
             </a>
         </section>
-        <!-- Manage and Development-Section
+        <!-- Manage and Development-Section -->
         <section class="manage-development">
             <div class="manage-development__elements">
                 <h3 class="manage-development__heading">MANAGE & DEVELOP</h3>
@@ -83,7 +84,7 @@
             <img src="images/mandallogo.png" class="manage-development__logo" alt="mandal logo">
 
         </section>
-        <!-- Services Section
+        <!-- Services Section -->
         <section class="services">
             <ul class="services__list">
                 <li>
@@ -235,8 +236,13 @@
     <script src="https://kit.fontawesome.com/20c5629a29.js" crossorigin="anonymous"></script>
     <script>
         let showId=document.getElementById("show");
+        let closeDetailsId=document.getElementById("closeDetails");
+        let showDetailsId=document.getElementById("showDetails");
         function showMenu(){
             showId.classList.toggle("show");
+            closeDetailsId.classList.toggle("icon");
+            showDetailsId.classList.toggle("icon");
+            
         }
     </script>
 </body>

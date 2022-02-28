@@ -14,6 +14,9 @@
             display: block;  
             font-size: 35px; 
         }
+        @include breakpoint(custom-small-mobile-max){
+            font-size: 20px;
+        }
     }
     &__container{
         background-color: $white-color;
@@ -23,13 +26,14 @@
         @include breakpoint(ipad-max){
             display:block;
             position: absolute;
-            top: 150%;
+            top: 100%;
             left:0;
-            right:0;   
+            right:0; 
         }
-
         @include breakpoint(ipad-max){
-            display: none;   
+            display: none;  
+            background-color:$background-color-brown ;
+            padding:20px 0;
         }
         
     }
@@ -54,9 +58,19 @@
         color:$browncolor;
         text-decoration: none;
         font-weight:700;
+        @include breakpoint(custom-small-mobile-max){
+            width:167px;
+            font-size: 8px;
+            text-align: center;
+        }
     }
     &__vidarbha-logo{
         @include padding(0px,5px,0px,0px);
+        @include breakpoint(custom-small-mobile-max){
+            height:30px;
+            width:60px;
+        }
+        
     }
     &__top-links{
         @include margin(0,0,13px,0);
@@ -81,6 +95,10 @@
                 @include breakpoint(ipad-max){
                     font-size: 25px;
                     margin-bottom: 10px;
+                    color:$light-gray-color;
+                }
+                @include breakpoint(custom-small-mobile-max){
+                    font-size: 20px;
                 }
             }
         }
@@ -153,6 +171,10 @@
                 @include breakpoint(ipad-max){
                     font-size: 25px;
                     margin-bottom: 10px;
+                    color:$light-gray-color;
+                }
+                @include breakpoint(custom-small-mobile-max){
+                    font-size: 20px;
                 }
             }
         }
@@ -176,11 +198,15 @@
     }
 }
 .show{
-    display: block;
+    display: flex;
+    flex-direction: column-reverse;
 }
-.hide{
+.icon{
     display: none;
 }
+
+
+
 
                 
                                    
